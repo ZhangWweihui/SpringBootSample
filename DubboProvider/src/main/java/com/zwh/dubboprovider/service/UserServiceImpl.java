@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
  * @Date 2019/6/16
  */
 @Component
-@Service(interfaceClass = UserServiceBO.class,group="dubbo",version="1.0.0")
+@Service(interfaceClass = UserServiceBO.class,group="dubbo",version="1.0.0", timeout = 10000)
 public class UserServiceImpl implements UserServiceBO {
 
     @Override
