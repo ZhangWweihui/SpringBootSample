@@ -1,9 +1,8 @@
 package com.zwh.dubboconsumer.service;
 
-import com.zwh.sdk.Person;
-import com.zwh.sdk.UserServiceBO;
+import com.zwh.sdk.bo.UserServiceBO;
+import com.zwh.sdk.po.PersonImpl;
 import org.apache.dubbo.config.annotation.Reference;
-import org.apache.dubbo.config.annotation.Service;
 import org.springframework.stereotype.Component;
 
 /**
@@ -25,7 +24,7 @@ public class ConsumerService {
         return userServiceBO.sayHello2(name);
     }
 
-    public String testPojo(Person person) {
+    public String testPojo(PersonImpl person) {
         return userServiceBO.testPojo(person);
     }
 }

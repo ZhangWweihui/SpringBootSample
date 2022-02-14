@@ -1,7 +1,7 @@
 package com.zwh.dubboconsumer;
 
 import com.zwh.dubboconsumer.service.ConsumerService;
-import com.zwh.sdk.PersonImpl;
+import com.zwh.sdk.po.PersonImpl;
 import org.apache.dubbo.config.spring.context.annotation.EnableDubboConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

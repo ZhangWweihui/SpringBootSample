@@ -1,8 +1,8 @@
 package com.zwh.dubboprovider.service;
 
 import com.alibaba.fastjson.JSON;
-import com.zwh.sdk.Person;
-import com.zwh.sdk.UserServiceBO;
+import com.zwh.sdk.bo.UserServiceBO;
+import com.zwh.sdk.po.Person;
 import org.apache.dubbo.config.annotation.Service;
 import org.springframework.stereotype.Component;
 
