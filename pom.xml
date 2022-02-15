@@ -26,6 +26,7 @@
     <properties>
         <java.version>1.8</java.version>
         <springboot.version>2.6.3</springboot.version>
+        <groovy.version>3.0.9</groovy.version>
     </properties>
 
     <dependencyManagement>
@@ -75,6 +76,20 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.codehaus.groovy</groupId>
+            <artifactId>groovy</artifactId>
+            <version>${groovy.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.groovy</groupId>
+            <artifactId>groovy-all</artifactId>
+            <version>${groovy.version}</version>
+            <type>pom</type>
+        </dependency>
+    </dependencies>
 
 <!--    <repositories>-->
 <!--        <repository>-->
