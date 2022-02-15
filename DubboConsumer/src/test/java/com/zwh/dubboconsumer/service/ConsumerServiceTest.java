@@ -27,4 +27,13 @@ public class ConsumerServiceTest {
         person.setAge(20);
         log.info(consumerService.testPojo(person));
     }
+
+    @Test
+    public void test2() {
+        Assert.assertNotNull(consumerService);
+        log.info(consumerService.connect());
+        log.info(consumerService.disconnect());
+        log.info(consumerService.reconnect());
+        log.info(consumerService.echo("wakawaka"));
+    }
 }
