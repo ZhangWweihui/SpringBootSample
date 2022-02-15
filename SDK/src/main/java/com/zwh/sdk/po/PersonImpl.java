@@ -1,9 +1,11 @@
 package com.zwh.sdk.po;
 
+import java.io.Serializable;
+
 /**
  * @author zhangweihui
  */
-public class PersonImpl implements Person {
+public class PersonImpl implements Person, Serializable {
 
     private String name;
     private Integer age;

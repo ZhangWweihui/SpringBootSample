@@ -3,7 +3,7 @@ package com.zwh.dubboprovider.service;
 import com.alibaba.fastjson.JSON;
 import com.zwh.sdk.bo.UserServiceBO;
 import com.zwh.sdk.po.Person;
-import org.apache.dubbo.config.annotation.Service;
+import org.apache.dubbo.config.annotation.DubboService;
 import org.springframework.stereotype.Component;
 
 /**
@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
  * @Date 2019/6/16
  */
 @Component
-@Service(interfaceClass = UserServiceBO.class,group="dubbo",version="1.0.0", timeout = 10000)
+@DubboService(interfaceClass = UserServiceBO.class,group="dubbo",version="1.0.0", timeout = 10000)
 public class UserServiceImpl implements UserServiceBO {
 
     @Override

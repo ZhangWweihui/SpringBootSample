@@ -2,7 +2,7 @@ package com.zwh.dubboconsumer.service;
 
 import com.zwh.sdk.bo.UserServiceBO;
 import com.zwh.sdk.po.PersonImpl;
-import org.apache.dubbo.config.annotation.Reference;
+import org.apache.dubbo.config.annotation.DubboReference;
 import org.springframework.stereotype.Component;
 
 /**
@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class ConsumerService {
 
-    @Reference(group = "dubbo", interfaceClass = UserServiceBO.class, version = "1.0.0", timeout = 10000)
+    @DubboReference(group = "dubbo", interfaceClass = UserServiceBO.class, version = "1.0.0", timeout = 10000)
     private UserServiceBO userServiceBO;
 
     public String sayHello(String name) {
